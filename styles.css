@@ -1,0 +1,27 @@
+//This is styles to display the layout of the page
+
+
+section,footer{
+    border:1px solid red;
+}
+
+header > div,nav{
+    border:1px solid red;
+}
+
+//Real styles
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    column-gap: 1rem;
+}
+
+a {
+    text-decoration:none;
+}
