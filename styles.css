@@ -1,15 +1,15 @@
-//This is styles to display the layout of the page
-
 
 section,footer{
     border:1px solid red;
 }
 
+section{
+    margin: 1rem;
+}
 header > div,nav{
     border:1px solid red;
 }
 
-//Real styles
 header {
     display: flex;
     justify-content: space-between;
@@ -24,4 +24,21 @@ ul {
 
 a {
     text-decoration:none;
+}
+
+.activity{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+img{
+    width:100%;
+    height:100%;
+}
+.activity >  div{
+    position:relative;
+    border:1px solid red ;
+    max-height:16rem;
+    max-width:32rem;
+    border: 1px solid red;
 }
