@@ -1,17 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+
 :root {
   --primary-sky-blue: #4fc3f7;
   --secondary-dark-slate: #37474f;
-  --background-white: #ffffff;
+  --background-sunset-yellow:rgb(246, 237, 221);
   --accent-warm-orange: #ff7043;
-  --soft-highlight-soft-blue: #e1f5fe;
+  --soft-highlight-white:rgb(250, 250, 250);
 }
 
-*{
-  box-sizing:border-box;
-}
+
 /* Global Styles (Element Selectors) */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 1rem;
+  background-color: var(--background-sunset-yellow);
 }
 
 header {
@@ -20,7 +26,7 @@ header {
   align-items: center;
   position: relative;
   min-height: 4rem;
-  flex-flow:row wrap;
+  flex-flow: row wrap;
 }
 
 header > div,
@@ -42,23 +48,44 @@ ul {
 
 a {
   text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight:bold;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  border-radius: 1rem;
 }
 
-footer{
-  margin:1rem
+footer {
+  margin: 1rem;
 }
-svg{
-  width:1rem;
-  heiht:auto;
+
+svg {
+  width: 1rem;
+  heiht: auto;
 }
+
+p{
+  font-family:"Open Sans", sans-serif;
+}
+
+
 /* Component Styles */
-.company{
-  display:flex;
+
+.company {
+  display: flex;
+}
+
+.hero__title,.company__title {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+}
+
+.about__title,.activity__title{
+  font-family: "Merriweather", serif;
+  font-weight: 600;
 }
 
 .activity {
@@ -75,18 +102,21 @@ svg{
   position: relative;
   max-width: 32rem;
   border: 1px solid red;
+  background-color: var(--soft-highlight-white);
+  border-radius: 1rem;
 }
 
+.activity__title,.activity__description{
+  padding:1rem;
+}
 
-
-@media screen and (max-width:425px){
-
-  header{
+@media screen and (max-width: 425px) {
+  header {
     justify-content: center;
   }
 
   .company__logo {
     max-width: 25%;
-    height: auto; 
+    height: auto;
   }
 }
