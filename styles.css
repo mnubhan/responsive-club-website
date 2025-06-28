@@ -5,6 +5,10 @@
   --accent-warm-orange: #ff7043;
   --soft-highlight-soft-blue: #e1f5fe;
 }
+
+*{
+  box-sizing:border-box;
+}
 /* Global Styles (Element Selectors) */
 body {
   margin: 1rem;
@@ -45,6 +49,13 @@ img {
   height: auto;
 }
 
+footer{
+  margin:1rem
+}
+svg{
+  width:1rem;
+  heiht:auto;
+}
 /* Component Styles */
 .company{
   display:flex;
