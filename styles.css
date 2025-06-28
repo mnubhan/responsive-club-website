@@ -3,7 +3,7 @@
 :root {
   --primary-sky-blue: #4fc3f7;
   --secondary-dark-slate: #37474f;
-  --background-sunset-yellow: rgb(232 229 223);
+  --background-sunset-yellow: rgb(249 243 233);
   --accent-warm-orange: #ff7043;
   --soft-highlight-white: rgb(250, 250, 250);
 }
@@ -15,7 +15,7 @@
 }
 
 body {
-  margin: 1rem;
+  margin: 0 4rem ;
   background-color: var(--background-sunset-yellow);
 }
 
@@ -28,7 +28,7 @@ header {
   flex-flow: row wrap;
 }
 
-header > div,
+/* header > div,
 nav {
   border: 1px solid red;
 }
@@ -36,7 +36,7 @@ nav {
 section,
 footer {
   border: 1px solid red;
-}
+} */
 
 ul {
   display: flex;
@@ -49,6 +49,13 @@ a {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
+  color:var(--secondary-dark-slate);
+  transition: color .32s cubic-bezier(.4,0,.6,1);
+
+}
+
+a:hover{
+  color:var(--primary-dark);
 }
 
 img {
@@ -86,6 +93,11 @@ p {
   flex-flow: row nowrap;
 }
 
+.hero__image {
+  width: 50%;
+  height: auto;
+}
+
 .hero__title,
 .company__title {
   font-family: "Merriweather", serif;
@@ -111,9 +123,17 @@ p {
   flex-direction: column;
   position: relative;
   max-width: 32rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-color: var(--soft-highlight-white);
   border-radius: 1rem;
+  box-shadow: 2px 4px 12px #00000014;
+  transition: all .3s cubic-bezier(0,0,.5,1);
+  cursor:pointer;
+}
+
+.activity__item:hover{
+  box-shadow: 2px 4px 16px #00000029;
+  transform: scale3d(1.01, 1.01, 1.01);
 }
 
 .activity__title,
@@ -126,6 +146,9 @@ p {
     justify-content: center;
   }
 
+  body{
+    margin:0 1rem;
+  }
   .company__logo {
     max-width: 25%;
     height: auto;
@@ -133,5 +156,10 @@ p {
 
   .hero {
     flex-flow: wrap;
+  }
+
+  .hero__image {
+    width: 100%;
+    height: auto;
   }
 }
