@@ -3,11 +3,10 @@
 :root {
   --primary-sky-blue: #4fc3f7;
   --secondary-dark-slate: #37474f;
-  --background-sunset-yellow:rgb(246, 237, 221);
+  --background-sunset-yellow: rgb(232 229 223);
   --accent-warm-orange: #ff7043;
-  --soft-highlight-white:rgb(250, 250, 250);
+  --soft-highlight-white: rgb(250, 250, 250);
 }
-
 
 /* Global Styles (Element Selectors) */
 
@@ -49,7 +48,7 @@ ul {
 a {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 img {
@@ -67,10 +66,9 @@ svg {
   heiht: auto;
 }
 
-p{
-  font-family:"Open Sans", sans-serif;
+p {
+  font-family: "Open Sans", sans-serif;
 }
-
 
 /* Component Styles */
 
@@ -78,12 +76,24 @@ p{
   display: flex;
 }
 
-.hero__title,.company__title {
+.company__logo {
+  max-width: 10%;
+  height: auto;
+}
+
+.hero {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.hero__title,
+.company__title {
   font-family: "Merriweather", serif;
   font-weight: 700;
 }
 
-.about__title,.activity__title{
+.about__title,
+.activity__title {
   font-family: "Merriweather", serif;
   font-weight: 600;
 }
@@ -106,8 +116,9 @@ p{
   border-radius: 1rem;
 }
 
-.activity__title,.activity__description{
-  padding:1rem;
+.activity__title,
+.activity__description {
+  padding: 1rem;
 }
 
 @media screen and (max-width: 425px) {
@@ -118,5 +129,9 @@ p{
   .company__logo {
     max-width: 25%;
     height: auto;
+  }
+
+  .hero {
+    flex-flow: wrap;
   }
 }
