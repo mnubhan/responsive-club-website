@@ -51,13 +51,12 @@ a {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  color:var(--secondary-dark-slate);
-  transition: color .32s cubic-bezier(.4,0,.6,1);
-
+  color: var(--secondary-dark-slate);
+  transition: color 0.32s cubic-bezier(0.4, 0, 0.6, 1);
 }
 
-a:hover{
-  color:var(--primary-dark);
+a:hover {
+  color: var(--primary-dark);
 }
 
 img {
@@ -65,7 +64,6 @@ img {
   height: auto;
   border-radius: 1rem;
 }
-
 
 svg {
   width: 1rem;
@@ -76,11 +74,12 @@ p {
   font-family: "Open Sans", sans-serif;
 }
 
-section, footer{
+section,
+footer {
   margin: 2rem 4rem;
 }
 
-footer{
+footer {
   display: flex;
   flex-flow: row;
   justify-content: center;
@@ -102,11 +101,11 @@ footer{
 }
 
 .hero__content {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
 }
 
 .hero__image {
@@ -121,18 +120,19 @@ footer{
 }
 
 .about__title,
-.activity__title,.activities__title {
+.activity__title,
+.activities__title {
   font-family: "Merriweather", serif;
   font-weight: 700;
   text-align: center;
 }
 
 .about__content {
-    display: flex;
-    flex-flow: row nowrap;
-    column-gap: 2rem;
-    justify-content: space-around;
-    padding: 2rem;
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 2rem;
+  justify-content: space-around;
+  padding: 2rem;
 }
 
 .activity {
@@ -159,15 +159,14 @@ footer{
   background-color: var(--soft-highlight-white);
   border-radius: 1rem;
   box-shadow: 2px 4px 12px #00000014;
-  transition: all .3s cubic-bezier(0,0,.5,1);
-  cursor:pointer;
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+  cursor: pointer;
 }
 
-.activity__item:hover{
+.activity__item:hover {
   box-shadow: 2px 4px 16px #00000029;
   transform: scale3d(1.01, 1.01, 1.01);
 }
-
 
 .activity__title,
 .activity__description {
@@ -175,14 +174,15 @@ footer{
 }
 
 @media screen and (max-width: 425px) {
-
   header {
     justify-content: center;
   }
 
-  body{
-    margin:0 1rem;
+  section,
+  footer {
+    margin: 2rem 1rem;
   }
+
   .company__logo {
     max-width: 25%;
     height: auto;
@@ -195,5 +195,13 @@ footer{
   .hero__image {
     width: 100%;
     height: auto;
+  }
+
+  .about__content {
+    text-align: center;
+  }
+
+  .activities__container {
+    gap: 1rem;
   }
 }
