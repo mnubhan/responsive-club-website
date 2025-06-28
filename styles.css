@@ -15,7 +15,7 @@
 }
 
 body {
-  margin: 0 4rem ;
+  //margin: 0 4rem ;
   background-color: var(--background-sunset-yellow);
 }
 
@@ -23,9 +23,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   min-height: 4rem;
   flex-flow: row wrap;
+  background-color: var(--soft-highlight-white);
+  padding: 0 2rem;
+  margin: 0 auto;
 }
 
 /* header > div,
@@ -64,9 +66,6 @@ img {
   border-radius: 1rem;
 }
 
-footer {
-  margin: 1rem;
-}
 
 svg {
   width: 1rem;
@@ -77,6 +76,15 @@ p {
   font-family: "Open Sans", sans-serif;
 }
 
+section, footer{
+  margin: 2rem 4rem;
+}
+
+footer{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
 /* Component Styles */
 
 .company {
@@ -93,6 +101,14 @@ p {
   flex-flow: row nowrap;
 }
 
+.hero__content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
 .hero__image {
   width: 50%;
   height: auto;
@@ -105,12 +121,28 @@ p {
 }
 
 .about__title,
-.activity__title {
+.activity__title,.activities__title {
   font-family: "Merriweather", serif;
-  font-weight: 600;
+  font-weight: 700;
+  text-align: center;
+}
+
+.about__content {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 2rem;
+    justify-content: space-around;
+    padding: 2rem;
 }
 
 .activity {
+  display: flex;
+  position: relative;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+}
+
+.activities__container {
   display: flex;
   justify-content: space-evenly;
   position: relative;
@@ -136,12 +168,14 @@ p {
   transform: scale3d(1.01, 1.01, 1.01);
 }
 
+
 .activity__title,
 .activity__description {
   padding: 1rem;
 }
 
 @media screen and (max-width: 425px) {
+
   header {
     justify-content: center;
   }
