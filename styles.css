@@ -173,6 +173,18 @@ footer {
   padding: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-flow: wrap;
+    justify-content: center;
+  }
+
+  .hero__image {
+    width: 100%;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 425px) {
   header {
     justify-content: center;
@@ -188,14 +200,6 @@ footer {
     height: auto;
   }
 
-  .hero {
-    flex-flow: wrap;
-  }
-
-  .hero__image {
-    width: 100%;
-    height: auto;
-  }
 
   .about__content {
     text-align: center;
